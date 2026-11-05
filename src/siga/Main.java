@@ -14,5 +14,9 @@ public class Main {
 
         CriadorPainel criadorCoordenador = new CriadorPainelCoordenador();
         criadorCoordenador.montarPainel();
+        System.out.println();
+        
+        CriadorPainel criadorSecretaria = new CriadorPainelSecretaria();
+        criadorSecretaria.montarPainel();
     }
 }
