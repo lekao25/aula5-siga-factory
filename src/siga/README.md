@@ -54,3 +54,5 @@ Ao final, deve ser possível **adicionar um novo perfil de usuário** criando ap
 ## Padrão de entrega
 
 Conforme a ficha de atividade prática: identificadores em português, código formatado, entrega no repositório Git com README e commits descritivos. O uso de IA para gerar o código é proibido nesta atividade (ver seção 5.3 da ficha).
+## Etapa 1: Diagnóstico do Acoplamento
+O método `montarPainel` em `GerenciadorLogin.java` utiliza uma estrutura de `if/else` com a palavra-chave `new` para instanciar classes concretas. Isso acopla a classe gerenciadora a todos os painéis e viola o Princípio Aberto/Fechado (OCP), pois qualquer novo perfil de usuário exige a alteração direta deste código existente.
